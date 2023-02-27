@@ -62,6 +62,10 @@ Runs husky install to install the Git hooks defined in .husky to enable linting,
 
 Deletes the node_modules folder, package-lock.json, and yarn.lock files, and then reinstalls all dependencies using yarn install. This command can be used to fix issues related to dependencies.
 
+## Adding New Dependencies
+
+Some dependencies such as Material UI and Apollo Client are already included in this repo on other branches. To use them, you can merge the relevant branch into the main branch. To make sure that the dependencies are installed correctly, run `yarn nuke` after merging the branch.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
