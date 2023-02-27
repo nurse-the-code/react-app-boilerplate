@@ -1,0 +1,5 @@
+# ignore all files and directories
+/*
+
+# except for JavaScript and TypeScript files
+!**/*.(js|jsx|ts|tsx)

@@ -25,8 +25,10 @@
     "test": "react-scripts test",
     "test:exit": "react-scripts test --forceExit",
     "eject": "react-scripts eject",
-    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json|md)\"",
+    "lint": "eslint --ignore-path .gitignore --ignore-path .eslintignore",
+    "lint:fix": "yarn lint --fix",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(html|css|js|jsx|ts|tsx|json|md)\"",
+    "format:check": "prettier --ignore-path .gitignore --check \"**/*.+(html|css|js|jsx|ts|tsx|json|md)\"",
     "prepare": "husky install",
     "nuke": "rm -rf node_modules package-lock.json yarn.lock && yarn install"
   },
@@ -34,6 +36,12 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "lint-staged": {
+    "**/*": [
+      "yarn lint:fix",
+      "yarn format:check"
     ]
   },
   "browserslist": {
@@ -60,6 +68,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.3",
     "jest": "^29.4.3",
+    "lint-staged": "^13.1.2",
     "prettier": "^2.8.4"
   }
 }
