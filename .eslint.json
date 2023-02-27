@@ -18,6 +18,8 @@
   },
   "plugins": ["@typescript-eslint", "react", "react-hooks"],
   "rules": {
+    "complexity": ["error", 10],
+    "max-depth": ["error", 2],
     "no-magic-numbers": [
       "error",
       {
@@ -25,7 +27,10 @@
       }
     ],
     "no-magic-string": "error",
-    "import/no-unresolved": "error",
+    "import/extensions": "off",
+    "import/no-absolute-path": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-unresolved": [2, {"ignore": []}],
     "import/order": [
       "error",
       {
@@ -43,7 +48,12 @@
       }
     ],
     "react/destructuring-assignment": "error",
+    "react/forbid-prop-types": 2,
     "react/function-component-definition": "error",
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "react/jsx-indent": [2, 2],
+    "react/jsx-handler-names": 2,
+    "react/prefer-stateless-function": 2,
     "react-hooks/rules-of-hooks": "error"
   }
 }
