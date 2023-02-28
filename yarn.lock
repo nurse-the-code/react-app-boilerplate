@@ -4096,9 +4096,9 @@ ejs@^3.1.6:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.284:
-  version "1.4.312"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.312.tgz#e70a5b46252814ffc576b2c29032e1a559b9ad53"
-  integrity sha512-e7g+PzxzkbiCD1aNhdj+Tx3TLlfrQF/Lf+LAaUdoLvB1kCxf9wJimqXdWEqnoiYjFtxIR1hGBmoHsBIcCBNOMA==
+  version "1.4.313"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.313.tgz#ff95f01926ab748c65beb23fc55f2f178e7a24a9"
+  integrity sha512-QckB9OVqr2oybjIrbMI99uF+b9+iTja5weFe0ePbqLb5BHqXOJUO1SG6kDj/1WtWPRIBr51N153AEq8m7HuIaA==
 
 emittery@^0.10.2:
   version "0.10.2"
@@ -4391,6 +4391,11 @@ eslint-plugin-react-hooks@^4.3.0, eslint-plugin-react-hooks@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.6.0.tgz#4c3e697ad95b77e93f8646aaa1630c1ba607edd3"
   integrity sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==
+
+eslint-plugin-react-prefer-function-component@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-prefer-function-component/-/eslint-plugin-react-prefer-function-component-3.1.0.tgz#eb4c7ee1e8cad6279b8e943dab04f9a5f9c190b0"
+  integrity sha512-A80QdKaMKC5Prq6Od37rieOy9HutgKQhe7+mmRgoMVvEqMJtvCxk10QOlyujjaX+xGSA4ma8R+4QOQQIeTmPAA==
 
 eslint-plugin-react@^7.27.1, eslint-plugin-react@^7.32.2:
   version "7.32.2"

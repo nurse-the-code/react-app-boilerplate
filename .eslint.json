@@ -8,7 +8,8 @@
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "react-app",
-    "react-app/jest"
+    "react-app/jest",
+    "plugin:react-prefer-function-component/recommended"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -16,7 +17,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react", "react-hooks"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "import",
+    "react-prefer-function-component"
+  ],
   "rules": {
     "complexity": ["error", 10],
     "max-depth": ["error", 2],
@@ -49,7 +56,6 @@
     ],
     "react/destructuring-assignment": "error",
     "react/forbid-prop-types": 2,
-    "react/function-component-definition": "error",
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".jsx", ".tsx"] }
