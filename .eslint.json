@@ -9,7 +9,8 @@
     "prettier",
     "react-app",
     "react-app/jest",
-    "plugin:react-prefer-function-component/recommended"
+    "plugin:react-prefer-function-component/recommended",
+    "plugin:import/recommended"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -64,5 +65,11 @@
     "react/jsx-handler-names": 2,
     "react/prefer-stateless-function": 2,
     "react-hooks/rules-of-hooks": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
   }
 }
