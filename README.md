@@ -1,4 +1,4 @@
-# Getting Started with nurse-the-code's Material-UI Create React App
+# Getting Started with nurse-the-code's React App Boilerplate
 
 This boilerplate was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
