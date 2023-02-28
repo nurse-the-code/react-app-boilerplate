@@ -8,7 +8,9 @@
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "react-app",
-    "react-app/jest"
+    "react-app/jest",
+    "plugin:react-prefer-function-component/recommended",
+    "plugin:import/recommended"
   ],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
@@ -16,10 +18,16 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react", "react-hooks"],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "import",
+    "react-prefer-function-component"
+  ],
   "rules": {
-    "react/function-component-definition": "error",
-    "react-hooks/rules-of-hooks": "error",
+    "complexity": ["error", 10],
+    "max-depth": ["error", 2],
     "no-magic-numbers": [
       "error",
       {
@@ -27,7 +35,10 @@
       }
     ],
     "no-magic-string": "error",
-    "react/destructuring-assignment": "error",
+    "import/extensions": "off",
+    "import/no-absolute-path": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/no-unresolved": [2, { "ignore": [] }],
     "import/order": [
       "error",
       {
@@ -44,6 +55,21 @@
         }
       }
     ],
-    "import/no-unresolved": "error"
+    "react/destructuring-assignment": "error",
+    "react/forbid-prop-types": 2,
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+    "react/jsx-indent": [2, 2],
+    "react/jsx-handler-names": 2,
+    "react/prefer-stateless-function": 2,
+    "react-hooks/rules-of-hooks": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": true,
+      "node": true
+    }
   }
 }
